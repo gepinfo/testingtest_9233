@@ -33,6 +33,7 @@ const routes: Routes = [
 { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
 
 { path : 'feat', loadChildren: () => import('./feat/feat.module').then(m => m.FeatModule), canActivate: [AuthGuard] } , 
+{ path : 'ckeditorss', loadChildren: () => import('./ckeditorss/ckeditorss.module').then(m => m.CkeditorssModule), canActivate: [AuthGuard] } , 
 ];
 
 @NgModule({
