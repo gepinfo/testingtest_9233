@@ -17,6 +17,7 @@ servers:
      description: feat
 tags:
 - name: feat
+- name: flet
 paths:
    "/feat":
       post:
@@ -57,5 +58,14 @@ components:
          type: object
          properties:
             name:
+               type: "string"
+               description: Description
+            email:
+               type: "string"
+               description: Description
+      flet:
+         type: object
+         properties:
+            datas:
                type: "string"
                description: Description

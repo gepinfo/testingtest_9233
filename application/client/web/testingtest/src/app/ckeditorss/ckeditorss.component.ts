@@ -14,6 +14,14 @@ export class CkeditorssComponent implements OnInit {
         last_modified_by: '',
         last_modified_date_at: '',
         name: '',
+        email: '',
+    }
+    public flet:any = {
+        created_date_at: '',
+        created_by: '',
+        last_modified_by: '',
+        last_modified_date_at: '',
+        datas: '',
     }
 
     constructor (
@@ -22,5 +30,6 @@ export class CkeditorssComponent implements OnInit {
 
     ngOnInit() {
         this.feat.created_by = sessionStorage.getItem('email') || ''; 
+        this.flet.created_by = sessionStorage.getItem('email') || ''; 
     }
 }
